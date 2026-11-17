@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f5f1">
+  <meta name="description" content="خطة تفاعلية كاملة لتعلم قواعد الإنجليزية خلال ثمانية أسابيع، مع شروحات وأمثلة وتدريبات." />
+  <title>خطة قواعد الإنجليزية — شرح وتدريب</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="lessons.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <div class="brand"><span class="brand-icon" aria-hidden="true">Aa</span><span>دفتر التعلّم</span></div>
+      <div class="top-actions"><span class="date-pill" id="today"></span><button class="reset-btn" id="resetBtn" type="button">إعادة ضبط التقدم</button></div>
+    </header>
+    <section class="hero">
+      <div class="hero-main">
+        <div class="eyebrow">مسار متكامل · ٨ أسابيع</div>
+        <h1>افهم القاعدة،<br>جرّبها، واستخدمها.</h1>
+        <p>كل درس فيه شرح بالعربي، أمثلة واضحة، وأسئلة بتصحيح فوري. ابدأ من الأساسيات وتقدّم خطوة خطوة.</p>
+        <div class="hero-meta"><span>٤٨ درسًا</span><span>شرح وأمثلة</span><span>تدريب تفاعلي</span></div>
+      </div>
+      <div class="hero-side">
+        <div><div class="side-top">إنجاز الخطة</div><div class="side-number"><span id="bigPercent">٠</span><small>%</small></div></div>
+        <div><div class="side-bottom"><span>الدروس المكتملة</span><span id="bigCount">٠ من ٤٨</span></div><div class="progress-track"><div class="progress-fill" id="mainProgress"></div></div></div>
+      </div>
+    </section>
+    <section class="summary-grid" aria-label="ملخص التقدم">
+      <div class="summary-card"><div class="summary-icon">✓</div><div><div class="summary-label">الدروس المكتملة</div><div class="summary-value" id="completedStat">٠ / ٤٨</div></div></div>
+      <div class="summary-card"><div class="summary-icon">◷</div><div><div class="summary-label">الأسبوع الحالي</div><div class="summary-value" id="currentWeek">الأسبوع ١</div></div></div>
+      <div class="summary-card"><div class="summary-icon">✦</div><div><div class="summary-label">المتبقي من الخطة</div><div class="summary-value" id="remainingStat">٤٨ درسًا</div></div></div>
+    </section>
+    <section>
+      <div class="section-head"><div><div class="section-kicker">من التأسيس إلى المحادثة</div><h2>خطة الأسابيع والدروس</h2><p>افتح الدرس لقراءة الشرح وحل الأسئلة. علّمه مكتملًا بعد المذاكرة.</p></div><label class="search-wrap"><span>⌕</span><input id="search" type="search" placeholder="ابحث عن درس…" aria-label="ابحث عن درس"></label></div>
+      <div class="weeks" id="weeks"></div>
+    </section>
+    <aside class="study-note"><span class="note-mark">✳</span><div><strong>تقسيمة مقترحة لساعة الدراسة</strong><p>٣٥ دقيقة لفهم الشرح ومراجعة الأمثلة، ٢٠ دقيقة لحل الأسئلة، و٥ دقائق لتلخيص القاعدة بكلماتك.</p></div></aside>
+    <footer class="footer">يُحفظ تقدمك ونتائج التدريب تلقائيًا في هذا المتصفح على جهازك.</footer>
+  </main>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
